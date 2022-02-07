@@ -20,3 +20,106 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh; }
+
+.header__logo {
+  height: 3.25rem;
+  margin-left: 3rem; }
+
+.header .search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .header .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all .2s;
+    margin-right: -3.25rem; }
+    .header .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: #f0eeee; }
+    .header .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: #ccc; }
+  .header .search__input:focus + .header .search__button {
+    background-color: #f0eeee; }
+  .header .search__button {
+    border: none;
+    background-color: #f4f2f2; }
+    .header .search__button:active {
+      transform: translateY(2px); }
+  .header .search__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #999; }
+
+.header .user-nav {
+  display: flex;
+  align-items: center;
+  align-self: stretch; }
+  .header .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    align-items: center; }
+  .header .user-nav > *:hover {
+    background-color: #f4f2f2; }
+  .header .user-nav__icon-box {
+    position: relative; }
+  .header .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: #777; }
+  .header .user-nav__notification {
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    background-color: #eb2f64;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .header .user-nav__user-photo {
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+    margin-right: 1rem; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: #f4f2f2;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  min-height: 50rem; }
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: #faf9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem; }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: #333;
+  flex: 0 0 18%; }
+
+.hotel-view {
+  background-color: #fff;
+  flex: 1; }
