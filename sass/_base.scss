@@ -14,6 +14,12 @@ $color-grey-dark-3: #999;
 
 $shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
 
+$bp-largest: 75em;
+$bp-large: 86.75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
 *{
     margin: 0;
     padding: 0;
@@ -28,6 +34,10 @@ $shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
 html{
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body{
