@@ -351,7 +351,6 @@
     margin: 3rem 0;
     border-top:  1px solid $color-grey-light-2;
     border-bottom:  1px solid $color-grey-light-2;
-
     display: flex;
     flex-wrap: wrap;
 
@@ -376,8 +375,8 @@
             -webkit-mask-size: cover;
             mask-image: url("../img/chevron-thin-right.svg");
             mask-size: cover;
+            background-image: none;
         }
-
     }
 }
 
